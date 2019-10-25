@@ -4,10 +4,8 @@ import java.awt.BasicStroke
 import java.awt.geom.Arc2D
 import java.math.BigDecimal
 
-import breeze.linalg.{*, Axis, DenseMatrix, DenseVector, convert, eigSym, max, sum, trace}
+import breeze.linalg.{*, DenseMatrix, DenseVector, convert, eigSym, max, sum, trace}
 import breeze.numerics.sqrt
-import breeze.stats.covmat
-import breeze.stats.corrcoeff
 import org.jfree.chart.{ChartFactory, ChartFrame}
 import org.jfree.chart.annotations.XYShapeAnnotation
 import org.jfree.chart.plot.PlotOrientation

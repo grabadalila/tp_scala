@@ -66,12 +66,12 @@ object demo {
     val colone = DenseVector("CUB","PUZ","CAL","MEM","COM","VOC")
 
     //matrice de corelation
-   // val coeffmat=corrcoeff(mat)
+    val coeffmat=corrcoeff(mat)
     // println(corrcoeff(mat))
 
     //les valeur propre
     // val EigSym(lambda, evs) = eigSym(mat)
-    val es = eigSym(mat)
+    val es = eigSym(coeffmat)
     val lambda = es.eigenvalues
     val lambda2 = es.eigenvectors
 

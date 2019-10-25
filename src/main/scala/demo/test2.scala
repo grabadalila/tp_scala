@@ -4,7 +4,6 @@ import breeze.linalg.DenseVector
 import org.jfree.chart.plot.PlotOrientation
 import org.jfree.chart.{ChartFactory, ChartFrame}
 import org.jfree.data.category.DefaultCategoryDataset
-import scalax.chart.api._
 
 import scala.util.Random
 import org.jfree.data.statistics._
@@ -24,10 +23,10 @@ val x:Array[Double]= Array.tabulate(1000){
 val dataset =new HistogramDataset()
     dataset.setType(HistogramType.RELATIVE_FREQUENCY)
     dataset.addSeries("Histogram",x,11)
-    val chart =XYBarChart(dataset)
+    /*val chart =XYBarChart(dataset)
   chart.plot.getDomainAxis().setLabel("Value")
   chart.plot.getRangeAxis().setLabel("Frequency")
-    chart.show()
+    chart.show()*/
 
     def matchTest(x: Int): String
     = x match {
